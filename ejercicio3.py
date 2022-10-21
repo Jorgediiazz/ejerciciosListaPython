@@ -18,8 +18,8 @@ def nota_media(lst):
         acumulador += i
     resultado= acumulador/len(lst)
     return resultado
-media=nota_media(lista_caracteres)
-print("La nota media es :"media)
+media=nota_media(lista_caracteres())
+print("La nota media es :", media)
 
 def nota_alta(lst):
     acumulador=0
@@ -28,7 +28,7 @@ def nota_alta(lst):
             acumulador=i
     return acumulador
 alta=nota_alta(lista_caracteres)
-print("La nota alta es :"alta)
+print("La nota alta es :", alta)
 
 def nota_baja(lst):
     acumulador=11
@@ -37,4 +37,4 @@ def nota_baja(lst):
             acumulador=i
     return acumulador
 baja=nota_baja(lista_caracteres)
-print("La nota baja es :" baja)
+print("La nota baja es :", baja)
