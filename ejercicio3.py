@@ -27,7 +27,7 @@ def nota_alta(lst):
         if(i>acumulador):
             acumulador=i
     return acumulador
-alta=nota_alta(lista_caracteres)
+alta=nota_alta(lista_caracteres())
 print("La nota alta es :", alta)
 
 def nota_baja(lst):
@@ -36,5 +36,5 @@ def nota_baja(lst):
         if(i<acumulador):
             acumulador=i
     return acumulador
-baja=nota_baja(lista_caracteres)
+baja=nota_baja(lista_caracteres())
 print("La nota baja es :", baja)
