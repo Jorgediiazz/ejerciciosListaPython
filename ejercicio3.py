@@ -7,9 +7,14 @@ A continuación debe mostrar todas las notas, la nota media, la nota más alta q
 def lista_caracteres():
     lst=[]
     for i in range(0,5):
-        cadena=float(input("Dime una nota: "))
-        if(cadena<11 and cadena>-1):
-            lst.append(cadena)
+        try:
+            cadena=float(input("Dime una nota: "))
+            if(cadena<11 and cadena>-1):
+                lst.append(cadena)
+            else:
+                print("La nota ", cadena, "no es correcta.")
+        except:
+            print("Tiene que ser un numero.")
     return lst
 
 #Funcion para la nota media
